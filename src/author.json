@@ -1,0 +1,46 @@
+{
+    "authors":[
+        {
+            "name":"Richard Smitten",
+            "intro":"Richard Smitten là một tác giả và giáo viên tài chính chuyên về phân tích kỹ thuật và giao dịch cổ phiếu. Ông đã viết nhiều cuốn sách nổi tiếng về tài chính và đầu tư",
+            "products":"The Godmother: The Secret World of Kay Adams, Jesse Livermore: World's Greatest Stock Trader, Trade Like Jesse Livermore",
+            "more":"Richard Smitten cũng là một nhà giáo dục tài chính, đã giảng dạy tại nhiều trường đại học và tổ chức tài chính hàng đầu, cung cấp cho các học sinh và chuyên gia về tài chính những kiến thức, kỹ năng và phương pháp đầu tư chính xác trong thị trường đầu tư",
+            "img":"richardsmitten.jpg"
+        },
+        {
+            "name":"Song Hong Bing",
+            "intro":"Là một nhà văn, nhà thơ và nhà báo người Trung Quốc. Ông sinh năm 1959 tại thành phố Hà Bắc, Trung Quốc.",
+            "products":"The Knot, The Chrysanthemum, series of Currency Wars",
+            "more":"Song Hong Bing tốt nghiệp trường đại học Tổng hợp Hà Bắc và sau đó làm việc tại báo Hà Bắc Tuần Báo. Ông cũng từng làm việc tại báo Trung Nguyên tuần báo và báo Nhân dân Tân Hoa xã. Ông đã nhận được nhiều giải thưởng trong sự nghiệp của mình, bao gồm Giải thưởng văn học Quốc gia Trung Quốc năm 2011 cho tác phẩm 'Lược sử thời gian', và Giải thưởng Tác phẩm văn học nhân dân năm 2017 cho tác phẩm 'Cánh đồng của những vì sao'",
+            "img":"songhongbing.jpg"
+        },
+        {
+            "name":"Robert Cecil Martin",
+            "intro":"Còn được biết đến với cái tên Uncle Bob, là một lập trình viên và tác giả sách nổi tiếng về lập trình. Ông sinh năm 1952 và bắt đầu sự nghiệp lập trình vào những năm 1970.",
+            "products":"Clean Code: A Handbook of Agile Software Craftsmanship; Agile Software Development: Principles, Patterns, and Practices; The Clean Coder: A Code of Conduct for Professional Programmers",
+            "more":"Ông tham gia phát triển nhiều dự án lớn, nổi tiếng nhất là tham gia phát triển chương trình quản lý tàu ngầm Trident cho Hải quân Hoa Kỳ. Ông đã khuyến khích sử dụng phần mềm với chất lượng tốt hơn bằng cách tập trung vào việc làm rõ những nguyên tắc của lập trình viên cần tuân thủ trong quá trình phát triển phần mềm, cụ thể hơn là việc sử dụng đúng thiết kế hệ thống và viết mã sạch. Robert Cecil Martin đã nhận được nhiều giải thưởng về cả lĩnh vực công nghệ và xuất bản, bao gồm giải thưởng Jolt Product Excellence và giải thưởng Software Development Productivity Award của tập đoàn IBM.",
+            "img":"robertCmartin.jpg"
+        },
+        {
+            "name":"Richard Demille Wyckoff",
+            "intro":"Richard Demille Wyckoff (1873-1934) là một nhà giao dịch, nhà công nghệ, nhà tiên đoán, và tác giả sách nổi tiếng về chứng khoán và giao dịch tài sản. Ông sinh ra ở Midwestern State of Michigan, Hoa Kỳ và bắt đầu công việc giao dịch tài sản vào đầu những năm 1900.",
+            "products":"The Richard D. Wyckoff Method of Trading and Investing in Stocks: A Course of Instruction in Stock Market Science and Technique, Stock Market Technique, Studies in Tape Reading",
+            "more":"Wyckoff coi trọng việc nghiên cứu và phân tích đồ thị kỹ thuật, và đã phát triển một phương pháp giao dịch dựa trên việc đọc hiểu đồ thị giá và khối lượng giao dịch. Wyckoff là tác giả của cuốn The Richard D. Wyckoff Method of Trading and Investing in Stocks: A Course of Instruction in Stock Market Science and Technique. Cuốn sách này đã trở thành một bí kíp tuyệt vời cho các nhà đầu tư khi được xuất bản lần đầu tiên vào năm 1931. Cuốn sách của ông cung cấp cho độc giả một hệ thống chi tiết về cách phân tích đồ thị giá và khối lượng giao dịch để tìm ra các xu hướng và điểm vào/ra thị trường tiềm năng. Phương pháp giao dịch của Wyckoff đã trở thành một trong những phương pháp phổ biến nhất trong lĩnh vực giao dịch tài sản và được sử dụng bởi các nhà giao dịch trên toàn thế giới đến ngày nay.",
+            "img":"richardDwyckoff.png"
+        },
+        {
+            "name":"Mark Gates",
+            "intro":"Ông lớn lên ở California và đóng vai trò quan trọng trong bức tranh công nghệ suốt hơn một thập kỷ",
+            "products":"BLOCKCHAIN: Bản Chất Của Blockchain, Bitcoin, Tiền Điện Tử, Hợp Đồng Thông Minh và Tương Lai Của Tiền Tệ; BITCOIN - Bong Bóng Tài Chính Hay Tương Lai Của Tiền Tệ",
+            "more":"Cũng giống như cha đẻ của Bitcoin - Satoshi Nakamoto, và nhiều người có sức ảnh hưởng trong giới khác; Mark Gates giấu khá kỹ thông tin cá nhân, đặc biệt là gương mặt. Không ai thực sự rõ ông đến từ đâu, bao nhiêu tuổi, có gia đình và giáo dục ra sao… Thời trung học, ông đã bắt đầu thiết kế web bằng cách sử dụng ngôn ngữ lập trình HTML và văn bản thuần túy trong Notepad trước khi xuất hiện các công cụ tiên tiến. Mark bắt đầu kinh doanh thiết kế web tại trường đại học vào thời gian bùng nổ Internet cách đây 15 năm. Mark đã mở rộng kinh doanh thiết kế web thành hoạt động tiếp thị số, SEO và các phương tiện truyền thông xã hội. Sau khi sang nhượng doanh nghiệp này, ông dành thời gian để đi khắp nơi trên thế giới và kiếm tiền chỉ từ máy tính xách tay. Mark tin rằng cách học tốt nhất là trải nghiệm thực tế. Ông thích khám phá mọi thứ liên quan đến công nghệ, thu nhận kiến thức thực tiễn và truyền đạt cho mọi người để họ có thể làm được như vậy, cho dù người đó đang điều hành trang web, tiếp thị doanh nghiệp, kinh doanh tiền mã hóa, học lập trình hay tìm kiếm các kỹ năng thực tế để có được công việc mơ ước.",
+            "img":"anonymous.jpg"
+        },
+        {
+            "name":"Erica Stanford",
+            "intro":"Là một chuyên gia tiếp thị kỹ thuật số và hiện đang là giám đốc điều hành của Hội chợ Tiếp thị Kỹ thuật số và Tương tác (Digital Marketing and Communications Show) tại London, Vương quốc Anh.",
+            "products":"The Profitable Content System: The Entrepreneur's Guide to Creating Wildly Profitable Content That Turns Readers Into Buyers & Raving Fans; Vén màn những bê bối Crypto",
+            "more":"Năm 2013, Stanford bắt đầu làm việc tại văn phòng của Murray McCully, nghị sĩ của East Coast Bays. Cô ấy đã thế chỗ của chị gái mình, người trước đây đã làm việc cho McCully. Cô tham gia Đảng Quốc gia cùng một lúc. Khi bắt đầu làm việc tại văn phòng, cô ấy làm việc ở đó hai ngày một tuần với tư cách là một trong ba công việc trong khi còn có hai con. Sau đó, cô ấy làm việc toàn thời gian ở đó, và trước khi tranh cử vào quốc hội, cô ấy đã giữ vai trò Hỗ trợ Nghị sĩ Cấp cao. McCully đã nghỉ hưu tại Quốc hội vào năm 2017 và Đảng Quốc gia đã chọn Stanford làm người thay thế ông cho East Coast Bays. Stanford trước đây đã không ứng cử vào quốc hội hoặc văn phòng khác. Khu vực bầu cử của East Coast Bays là nơi an toàn cho Quốc gia kể từ năm 1987; kể từ đó McCully nắm giữ East Coast Bays hoặc Albany, bao phủ một khu vực tương tự. Trong cuộc tổng tuyển cử năm 2017, Stanford đã giành chiến thắng trong cuộc bầu cử một cách dễ dàng, với 66% phiếu bầu.Trong cuộc bầu cử năm 2020, Stanford lại ứng cử cho East Coast Bays. Trong chiến dịch tranh cử, cô cũng tham dự một cuộc tranh luận của các ứng cử viên miền Trung Auckland, vì Quốc gia đã không chọn một ứng cử viên mới cho khu vực bầu cử trong cuộc tranh luận. Stanford giữ lại East Coast Bays với cách biệt 8.764 phiếu bầu.",
+            "img":"ericastanford.jpg"
+        }
+    ]
+}

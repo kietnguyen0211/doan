@@ -1,0 +1,84 @@
+.footer {
+    width: 100%;
+    height: 35%;
+    background-color: rgb(30, 55, 153,0.9);
+    color: #fff;
+}
+
+.topFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 100%;
+}
+
+.logoFooter {
+    display: flex;
+    align-items: center;
+    width: calc(100% / 4);
+    height: 80%;
+}
+
+.logoFooter img {
+    width: 200px;
+}
+.logoFooter h1{
+    font-size: 2rem;
+}
+
+.elseFooter {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.elseFooter h1 {
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.contentFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 4);
+    padding: 2rem;
+    height: 60%;
+}
+
+.contentFooter span {
+    line-height: 200%;
+}
+
+.contentFooter h1 {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.child_1 {
+    width: 80px;
+    display: block;
+}
+
+.mst,
+.address,
+.Hotline,
+.emailFooter {
+    display: flex;
+}
+
+.iconsFooter {
+    width: calc(100% / 4);
+    height: 40%;
+}
+
+.iconsFooter h1 {
+    font-size: 1.3rem
+}

@@ -1,0 +1,50 @@
+.introduce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.includeContent{
+    display: flex;
+}
+.greeting{
+    padding: 1rem;
+}
+.star{
+    padding: 0rem 0rem 1.5rem 0rem;
+}
+.greeting_1{
+    padding: 0rem 0rem 1rem 0rem;
+}
+.content{
+    padding: 1rem;
+    width: 70%;
+}
+.content span{
+    line-height: 2.5rem;
+}
+.include{
+    width: 85%;
+}
+ul li{
+    list-style:circle;
+}
+.include .includeContent{
+    width: 100%;
+    display: flex;
+    padding: 0.5rem 0rem 1.5rem 0rem;
+    justify-content: space-between;
+}
+.vision{
+    width: 40%;
+}
+.mission{
+    width: 40%;
+}
+.essential{
+    padding:0.5rem 0rem 1rem 0rem;
+}

@@ -1,0 +1,10 @@
+{
+    "types":[
+        {"type":"Kinh tế"},
+        {"type":"Văn học"},
+        {"type":"Kỹ năng"},
+        {"type":"Kinh dị"},
+        {"type":"Khoa học viễn tưởng"},
+        {"type":"Trinh thám"}
+    ]
+}

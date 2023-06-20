@@ -1,0 +1,397 @@
+.linkTopHeader {
+    text-decoration: none;
+    color: #fff;
+}
+
+.iconTopHeader {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #fff;
+}
+
+.iconTopHeader svg {
+    display: flex;
+    align-items: center;
+}
+
+.linkTopHeader span {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.header {
+    width: 100%;
+    background-image: url("../header/img/bgHeaderBook.png");
+    background-size: cover;
+}
+.type{
+    position: relative;
+}
+.types{
+    top: 100%;
+    left: 20%;
+    width: 15rem;
+    position: absolute;
+    height: fit-content;
+    padding: 1rem;
+    color: #fff;
+    background: #1e3799e6;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 15;
+}
+.types.active{
+    opacity: 1;
+}
+.types li{
+    width: 100%;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0.5rem;
+}
+.types li span{
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.bestSeller {
+    margin-left: 30px;
+}
+
+
+
+
+
+.topHeader {
+    display: flex;
+    width: 100%;
+    height: 1.5rem;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.leftTopHeader {
+    display: flex;
+    width: 50%;
+}
+
+.rightTopHeader {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.bestSeller,
+.blog,
+.loveProduct,
+.email,
+.account {
+    position: relative;
+    padding: 0px 0.5rem;
+
+}
+
+
+
+
+.middleHeader {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    height:6rem;
+    background-color: rgb(30, 55, 153,0.9);
+}
+
+.leftMiddleHeader {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.logo img {
+    width: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.centerMiddleHeader {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.filter {
+    display: flex;
+    border-right: 1px solid #000;
+    height: 100%;
+}
+
+.filter h1 {
+    font-size: 1.2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.filter span {
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.filter span svg {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search {
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 2px 1px #fff;
+}
+
+.search input {
+    width: 60%;
+    height: 70%;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #544540 !important;
+}
+
+.iconSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconSearch svg {
+    font-size: 1.5rem;
+}
+
+.elseMiddleHeader {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.iconCart {
+    color: #fff;
+}
+
+.iconCart sup {
+    position: absolute;
+    bottom: 80%;
+    left: 100%;
+}
+
+.iconCart svg {
+    font-size: 2rem;
+}
+
+
+
+.navbar {
+    width: 100%;
+    padding: 1px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.navbarContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkNavbar {
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    padding: 0rem 2rem;
+    display: flex;
+}
+.linkNavbar h1{
+    font-size: 1rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.author .linkNavbar {
+    padding: 0px 10px !important;
+}
+
+.type .linkNavbar {
+    padding: 0px 10px !important;
+}
+.type .linkNavbar h1{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.author span {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.type span {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    transition:0.5s;
+}
+.type span.active1{
+    transform: rotate(180deg);
+}
+.type span.active2{
+    transform: rotate(0deg);
+}
+.author span.active1{
+    transform: rotate(180deg);
+}
+.author span.active2{
+    transform: rotate(0deg);
+}
+.type span svg:hover{
+    font-size: 2rem;
+    animation:rotate 0.5s linear;
+    animation-delay:0.1s;
+}
+.author span svg:hover{
+    font-size: 2rem;
+    animation:rotate 0.5s linear;
+    animation-delay:0.1s;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.type,
+.author {
+    display: flex;
+    padding: 0 2rem;
+    height: 100%;
+}
+.author{
+    position: relative;
+}
+.author ul{
+    width: 35vh;
+    position: absolute;
+    top: 100%;
+    background: #1e3799e6;
+    height: fit-content;
+    padding: 1rem;
+    opacity: 0;
+    z-index: 15;
+    transition: 0.5s;
+}
+.author ul.active{
+    opacity: 1;
+}
+.author ul li{
+    list-style: none;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #fff;
+}
+.author ul li span{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+.elseHeader {
+    width: 100%;
+    height: 84%;
+}
+
+
+
+
+
+
+
+@media (min-width:1921px){
+    .middleHeader {
+        display: flex;
+        width: 100%;
+        color: #fff;
+        opacity: 0.9;
+        height: 8%;
+        background-color: rgb(30, 55, 153,0.8);
+
+    }
+    .linkNavbar {
+        text-decoration: none;
+        color: #fff;
+        padding: 2rem;
+        display: flex;
+        height: 100%;
+    }
+    .linkNavbar h1{
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+    .rightMessageContent span{
+        padding: 5px 0px;
+        font-size: 1.8rem;
+    }
+}
