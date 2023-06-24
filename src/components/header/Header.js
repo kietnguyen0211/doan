@@ -14,6 +14,7 @@ import axios from "axios"
 import css from "../header/Header.css"
 import someTypes from "../../type.json"
 import authorjson from "../../author.json"
+import Pay from "../pay/Pay"
 import { useState } from "react";
 export default function Header() {
     const [check, setCheck] = useState(false)
@@ -41,11 +42,11 @@ export default function Header() {
                 <div className="leftTopHeader">
                     <div className="bestSeller">
                         <span className="iconTopHeader"><MdOutlineSell /></span>
-                        <Link className="linkTopHeader"><span>Bán chạy</span></Link>
+                        <Link className="linkTopHeader" to="/topsaler"><span>Bán chạy</span></Link>
                     </div>
                     <div className="blog">
                         <span className="iconTopHeader"><BsReverseLayoutTextSidebarReverse /></span>
-                        <Link className="linkTopHeader"><span>Bài viết</span></Link>
+                        <Link className="linkTopHeader" to="/infobooks"><span>Bài viết</span></Link>
                     </div>
                     <div className="loveProduct">
                         <span className="iconTopHeader"><AiOutlineHeart /></span>
@@ -81,7 +82,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="elseMiddleHeader">
-                    <Link className="cart">
+                    <Link className="cart" to="/pay">
                         <span className="iconCart"><GrShop /> <sup className="numberCart">0</sup></span>
                     </Link>
                 </div>
@@ -106,7 +107,7 @@ export default function Header() {
                                 {
                                     types.map((value, key) => {
                                         return (
-                                            <li key={key}><span>{value.type}</span></li>
+                                            <li key={key}><Link>{value.type}</Link></li>
                                         )
                                     })
                                 }

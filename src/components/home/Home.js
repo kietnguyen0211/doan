@@ -2,11 +2,13 @@ import css from "./Home.css"
 import Greeting from "../greeting/Greeting"
 import { TbCurrencyDong } from "react-icons/tb"
 import list from "../../imglist.json"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import { Link, Routes, Route } from "react-router-dom"
+import { AppContext } from "../../AppContext"
 import axios from "axios"
 import { Col } from "react-bootstrap"
 export default function Home() {
+    const { BuyNow } = useContext(AppContext)
     const [data, setData] = useState([])
     const [check1, setCheck1] = useState(false)
     const [check2, setCheck2] = useState(false)
@@ -45,7 +47,9 @@ export default function Home() {
                 console.log(error)
             })
     }
-    console.log("meo")
+    const meo =(id)=>{
+        console.log(id)
+    }
     useEffect(() => {
         getData()
     }, [])
@@ -53,7 +57,7 @@ export default function Home() {
     return (
         <div className="home">
             <Routes>
-                <Route path="/" element={<Greeting/>}></Route>
+                <Route path="/" element={<Greeting />}></Route>
             </Routes>
             <div className="sliderContent">
                 <img src="logo2.png"></img>
@@ -94,22 +98,23 @@ export default function Home() {
                     <div className="bookshelfContentElse">
                         <div className="slide">
                             {
-                                data.map((value, key) => {
-                                    return (
-                                        <div key={key}>
-                                            <div className="slideContent">
-                                                <div className="slideContain">
-                                                    <div className="img_slider">
-                                                        <img src={books[key].img} ></img>
+                                    data.map((value, key) => {
+                                        return (
+                                            <div key={key}>
+                                                <div className="slideContent">
+                                                    <div className="slideContain">
+                                                        <div className="img_slider">
+                                                            <img src={books[key].img} ></img>
+                                                        </div>
+                                                        <span>{value.name}</span>
+                                                        <span>{value.cost} <TbCurrencyDong /></span>
+                                                        <button onClick={()=>BuyNow(value.id)}>Mua Ngay</button>
                                                     </div>
-                                                    <span>{value.name}</span>
-                                                    <span>{value.cost} <TbCurrencyDong /></span>
-                                                    <button>Mua Ngay</button>
                                                 </div>
                                             </div>
-                                        </div>
-                                    )
-                                })
+                                        )
+                                    })
+                            
                             }
                         </div>
                     </div>
