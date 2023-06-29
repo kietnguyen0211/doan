@@ -78,7 +78,6 @@
     justify-content: center;
     align-items: center;
     animation: trans_right 3s linear;
-    /* padding-bottom: 3rem; */
 }
 
 @keyframes trans_right {
@@ -154,6 +153,19 @@
 .rightMessageContent span{
     padding: 5px 0px;
     font-size: 1.1rem;
+}
+@media only screen and (max-width : 412px){
+    .Greeting{
+        height: 40vh;
+        display: flex;
+        align-items: center;
+    }
+    .messageContent{
+        display: none;
+    }
+    .greeting h2{
+        display: none;
+    }
 }
 
 

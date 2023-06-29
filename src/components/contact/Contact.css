@@ -1,0 +1,21 @@
+.Contact{
+    width: 100%;
+    padding: 2rem;
+}
+.Contact .tittleContact{
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #000;
+}
+.Contact p{
+    font-size: 1.5rem;
+}
+.Contact span{
+    font-size: 1.5rem;
+    color: #f3901fcc;
+}
+.sdt{
+    font-size: 1.5rem;
+}

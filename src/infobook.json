@@ -6,6 +6,9 @@
             "cost":"140000",
             "author":"Song Hong Bing",
             "warehouse":"100",
+            "id":"0",
+            "isComplete":false,
+            "type":"Kinh tế",
             "tocontent":"Phần lớn chúng ta thường nghĩ sự hiện diện của đồng tiền trong cuộc sống là một lẽ đương nhiên, như không khí hay nước vậy. Rất ít người trong chúng ta hiểu được nguồn gốc của tiền bạc cũng như sự sinh tồn và phát triển của đồng tiền."
         },
         {
@@ -13,6 +16,9 @@
             "name":"Chiến Tranh Tiền Tệ 2",
             "cost":"140000",
             "author":"Song Hong Bing",
+            "id":"1",
+            "isComplete":false,
+            "type":"Kinh tế",
             "warehouse":"100",
             "tocontent":"Mục đích của cuốn sách này không phải là để dạy bạn cách đầu tư, cách phân bổ tài sản hay dạy một bộ phương pháp đối phó tiền tệ điển hình. Cuốn sách này nhằm trả lời những câu hỏi từ lâu đã khiến chúng ta bối rối và chưa được giải đáp: Tại sao tiền tệ lại có xung đột?"
         },
@@ -21,6 +27,9 @@
             "name":"Chiến Tranh Tiền Tệ 3",
             "cost":"140000",
             "author":"Song Hong Bing",
+            "id":"2",
+            "isComplete":false,
+            "type":"Kinh tế",
             "warehouse":"100",
             "tocontent":"Chiến tranh tiền tệ - phần III sẽ mang đến một cái nhìn toàn cảnh về những biến động trong lĩnh vực tài chính tại Trung Quốc từ thời nhà Thanh, cùng tác động của nó lên mọi mặt chính trị, xã hội của người dân nước này và trên thế giới. Giúp bạn hình dung con đường phát triển của đất nước này đã trải qua những biến động ra sao để đến được vị trí ngày nay."
         },
@@ -29,6 +38,9 @@
             "name":"Chiến Tranh Tiền Tệ 4",
             "cost":"140000",
             "author":"Song Hong Bing",
+            "id":"3",
+            "isComplete":false,
+            "type":"Kinh tế",
             "warehouse":"100",
             "tocontent":"Cuốn sách tiếp nối dòng câu chuyện về trận chiến tranh giành bá quyền tài chính thế giới, bắt đầu bằng nỗ lực lật đổ bá quyền đồng bảng Anh của đồng đô la Mỹ và cuộc phản công của đồng bảng Anh. Cuộc đấu tranh gay gắt giữa đồng đô la và đồng bảng Anh đã tạo ra một khoảng trống quyền lực tài chính thế giới trong những năm 1930, làm trầm trọng thêm cuộc Đại suy thoái trên toàn thế giới. Thế lực “Hợp chúng quốc châu Âu” cũng dần được thống nhất và trỗi dậy như một siêu cường tài chính."
         },
@@ -37,6 +49,9 @@
             "name":"Chiến Tranh Tiền Tệ 5",
             "cost":"140000",
             "author":"Song Hong Bing",
+            "id":"4",
+            "isComplete":false,
+            "type":"Kinh tế",
             "warehouse":"100",
             "tocontent":"Năm năm sau khi cuộc khủng hoảng tài chính năm 2008 kết thúc, các ý kiến về định hướng tương lai của nền kinh tế thế giới vẫn bị chia rẽ rất nhiều. Chính sách QE – nơi lỏng định lượng ở Mỹ có hiệu quả không? Tiền tệ toàn cầu phát hành quá mức rốt cuộc là phúc hay họa? Thị trường tài chính đang dần trở nên an toàn hay ngày càng nguy hiểm? Đà phục hồi kinh tế đang diễn ra ổn định hay chỉ là ánh chớp lóe lên rồi vụt tắt?"
         },
@@ -45,6 +60,9 @@
             "name":"Chiến Lược Giao Dịch Của Jesse Livemore",
             "cost":"140000",
             "author":"Richard D. Wyckoff",
+            "id":"5",
+            "isComplete":false,
+            "type":"Kinh tế",
             "warehouse":"100",
             "tocontent":"Không người nào có thể thành công trừ khi anh ta tích lũy được kiến thức kinh tế căn bản và nắm rõ điều kiện ở mọi khía cạnh. Giá trị nổi bật từ những kinh nghiệm của Livermore là nó chỉ cho một người làm kinh doanh bình thường, mà với họ việc đầu tư và đầu cơ là một phần bên lề, thấy rằng họ không cần phải là một thiên tài để kiếm tiền trên thị trường chứng khoán."
         },
@@ -53,6 +71,9 @@
             "name":"Chết Vì Chứng Khoán",
             "cost":"140000",
             "author":"Richard Smitten",
+            "id":"6",
+            "isComplete":false,
+            "type":"Kỹ năng",
             "warehouse":"100",
             "tocontent":"Không người nào có thể thành công trừ khi anh ta tích lũy được kiến thức kinh tế căn bản và nắm rõ điều kiện ở mọi khía cạnh. Giá trị nổi bật từ những kinh nghiệm của Livermore là nó chỉ cho một người làm kinh doanh bình thường, mà với họ việc đầu tư và đầu cơ là một phần bên lề, thấy rằng họ không cần phải là một thiên tài để kiếm tiền trên thị trường chứng khoán."
         },
@@ -61,6 +82,9 @@
             "name":"Blockchain",
             "cost":"140000",
             "author":"Mark Gates",
+            "id":"7",
+            "isComplete":false,
+            "type":"Văn học",
             "warehouse":"100",
             "tocontent":"Đọc cuốn sách này, bạn sẽ hiểu được Blockchain dưới nhiều khía cạnh, trong đó không chỉ có những lời ngợi khen mà còn không thiếu các chỉ trích, bình luận trái chiều."
         },
@@ -69,6 +93,9 @@
             "name":"Vén Màn Bê Bối Crypto",
             "cost":"140000",
             "author":"Mark Gates",
+            "id":"8",
+            "isComplete":false,
+            "type":"Kinh dị",
             "warehouse":"100",
             "tocontent":"Chuyên gia và nhà giáo dục về tiền điện tử, Erica Stanford, sẽ chỉ cho bạn cách các kế hoạch thao túng trên toàn thị trường, các quy trình, công nghệ không được kiểm soát đã bị khai thác để tạo ra miền tây..."
         }

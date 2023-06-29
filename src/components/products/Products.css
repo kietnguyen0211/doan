@@ -45,8 +45,8 @@
     width: 100%;
 }
 .oneProduct button{
-    width: 33%;
-    height: 2.5rem;
+    width: 50%;
+    height: 2rem;
     border: none;
     color: #fff;
     transition: 0.5s;
@@ -58,9 +58,38 @@
 }
 .oneProduct:hover button{
     border-radius: 50px;
-
 }
 .oneProduct button:hover{
     border-radius: 0px !important;
     background: #ffa502;
+}
+.Products{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.tittleProduct{
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #1827cea7;
+}
+.contentProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+@media only screen and (max-width: 412px){
+    .product{
+        width: 100%;
+    }
+    .oneProduct h1{
+        font-size: 3rem;
+    } 
+    .oneProduct button{
+        width: 60%;
+        height: 4rem;
+    }
 }

@@ -1,0 +1,84 @@
+.lovePages{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tittleLove{
+    border-bottom: 1px solid #1e3799cc;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+}
+.lovePage{
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+}
+.oneLove{
+    width: 100%;
+}
+.innerLove{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    border: 1px solid rgb(30, 55, 153,0.8);
+}
+.loveImg img{
+    width: 14rem;
+}
+.loveImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(30, 55, 153,0.8);
+    padding: 0.5rem;
+    height: fit-content;
+}
+.loveImg button{
+   width: 50%;
+   height: 2rem;
+   margin-top: 0.5rem;
+   border: none;
+   background-color: rgba(243, 144, 31, 0.7);
+   color: #fff;
+   box-shadow: 1px 1px 0.15rem 0.01rem #000;
+   transition: 0.5s;
+}
+.loveImg button:hover{
+    width: 52%;
+    height: 2.1rem;
+    background-color: rgb(30, 55, 153,0.8);
+    color: rgba(243, 144, 31, 0.7);
+    border: none;
+    box-shadow: none;
+    border-radius: 50px;
+}
+.loveContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.loveContent span:nth-child(3){
+    padding: 0.5rem 0rem;
+}
+.loveContent h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+@media only screen and (max-width : 412px){
+    .innerLove{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .loveContent h1{
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    .loveImg button{
+        height: 4rem;
+    }
+    .loveImg button:hover{
+        color: #fff;
+        height: 4rem;
+    }
+}

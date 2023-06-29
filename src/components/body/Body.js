@@ -7,6 +7,10 @@ import Email from "../email/Email"
 import Pay from "../pay/Pay"
 import TopSaler from "../topseller/TopSaler"
 import InfoBooks from "../infobooks/InfoBooks"
+import Blog from "../blog/Blog"
+import Love from "../love/Love"
+import Filter from "../filter/Filter"
+import Contact from "../contact/Contact"
 export default function Body(){
     return(
         <div>
@@ -19,6 +23,10 @@ export default function Body(){
                 <Route path="/email" element={<Email/>}></Route>
                 <Route path="/pay" element={<Pay/>}></Route>
                 <Route path="/topsaler" element={<TopSaler/>}></Route>
+                <Route path="/blog" element={<Blog/>}></Route>
+                <Route path="/love" element={<Love/>}></Route>
+                <Route path="/filter" element={<Filter/>}></Route>
+                <Route path="/contact" element={<Contact/>}></Route>
             </Routes>
         </div>
     )

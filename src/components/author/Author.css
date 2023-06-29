@@ -147,3 +147,17 @@
     box-shadow: 0 0 0.5rem 0.01rem #000;
     color: #000;
 }
+@media only screen and (max-width: 412px){
+    .one_author{
+        width: 100%;
+    }
+    .innerAuthor{
+        width: 100%;
+    }
+    .infoAuthor {
+        width: 100%;
+    }
+    .infoAuthor span h2{
+        font-size: 3rem;
+    }
+}

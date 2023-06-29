@@ -48,3 +48,12 @@ ul li{
 .essential{
     padding:0.5rem 0rem 1rem 0rem;
 }
+@media only screen and (max-width: 412px){
+    .includeContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .vision,.mission{
+        width: 100%;
+    }
+}

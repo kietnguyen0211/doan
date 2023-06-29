@@ -16,7 +16,6 @@ export default function Author() {
             setCheck(false)
         }
     }
-    console.log(authors[0].intro)
     return (
         <div className="Author">
             {

@@ -4,6 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+.Pay_title{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #000;
+    text-align: center;
 }
 .innerPay{
     width: 80%;
@@ -13,10 +20,48 @@
     margin-bottom: 0.5rem;
     justify-content: space-between;
 }
-
-.innerPay span:nth-child(2){
-    margin-left: 1rem;
+.innerPay_1{
+    width: calc(100% / 3);
 }
-.innerPay:nth-child(1){
-    display: none;
+.innerPay_2{
+    width: calc(100% / 3);
+    margin-left: 1rem;
+    text-align: center;
+}
+.innerPay_3{
+    width: calc(100% / 3);
+    cursor: pointer;
+    text-align: end;
+}
+.Pay_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 3rem;
+    transform: translate(-50%,-80%);
+}
+.Pay_1 h1{
+    font-size: 2.5rem;
+}
+.Pay_1 h2{
+    font-size: 1.5rem;
+}
+.increase,.decrease{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.numberQty{
+    margin: 0rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.paid{
+    font-size: 2rem;
+    color: #f3901fcc;
+    text-decoration: none;
 }

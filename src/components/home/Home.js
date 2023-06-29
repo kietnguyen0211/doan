@@ -7,9 +7,9 @@ import { Link, Routes, Route } from "react-router-dom"
 import { AppContext } from "../../AppContext"
 import axios from "axios"
 import { Col } from "react-bootstrap"
+import { AiOutlineHeart } from "react-icons/ai"
 export default function Home() {
-    const { BuyNow } = useContext(AppContext)
-    const [data, setData] = useState([])
+    const { BuyNow, books, love } = useContext(AppContext)
     const [check1, setCheck1] = useState(false)
     const [check2, setCheck2] = useState(false)
     const [check3, setCheck3] = useState(false)
@@ -35,25 +35,6 @@ export default function Home() {
             setCheck4(false)
         }
     }
-    const getData = async () => {
-        const url = `https://64788a1a362560649a2dfbd8.mockapi.io/list`
-        axios
-            .get(url)
-            .then((res) => {
-                setData(res.data)
-                console.log(res.data)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-    }
-    const meo =(id)=>{
-        console.log(id)
-    }
-    useEffect(() => {
-        getData()
-    }, [])
-    const books = list.books
     return (
         <div className="home">
             <Routes>
@@ -98,20 +79,19 @@ export default function Home() {
                     <div className="bookshelfContentElse">
                         <div className="slide">
                             {
-                                    data.map((value, key) => {
+                                    books.map((value, key) => {
                                         return (
-                                            <div key={key}>
-                                                <div className="slideContent">
+                                                <div className="slideContent" key={key}>
                                                     <div className="slideContain">
                                                         <div className="img_slider">
-                                                            <img src={books[key].img} ></img>
+                                                            <img src={value.img} ></img>
                                                         </div>
                                                         <span>{value.name}</span>
                                                         <span>{value.cost} <TbCurrencyDong /></span>
+                                                        <span onClick={()=>love(value.id)} className="heart"><AiOutlineHeart/></span>
                                                         <button onClick={()=>BuyNow(value.id)}>Mua Ngay</button>
                                                     </div>
                                                 </div>
-                                            </div>
                                         )
                                     })
                             

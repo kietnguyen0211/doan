@@ -1,0 +1,47 @@
+.Blog{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+.tittleBlog{
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 0.5rem 0rem;
+    margin: 1rem 0rem;
+    border-bottom: 1px solid #000;
+}
+.innerBlog{
+    width: 50%;
+    padding: 2rem;
+    box-shadow: 0 0 0.1rem 0.05rem rgb(0, 0, 0, 0.2);
+}
+.innerBlog p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #a4b0be;
+}
+.innerBlog h1{
+    font-size:2rem;
+    color: #2f3542;
+    font-weight: 800;
+}
+.anotherway{
+    width: 100%;
+}
+.poShake span{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.comment{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+@media only screen and (max-width: 412px){
+    .innerBlog{
+        width: 70%;
+    }
+}

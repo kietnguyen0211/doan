@@ -1,0 +1,118 @@
+.Topsaler{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TopSaler{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   background: #f5f6fa;
+}
+.topsaler{
+    width: calc(100% / 4);
+    height: 500px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.imgTopsaler{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.imgTopsaler img{
+    width: 100%;
+}
+.contentTopsaler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.innerTopsaler{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+    background: #fff;
+    transition: 0.3s;
+    border-bottom-right-radius: 50px ;
+}
+.innerTopsaler:hover{
+    box-shadow: 0 0 5px 2px #000;
+    border-radius: 50px;
+}
+.innerTopsaler:hover button{
+    border-radius: 50px;
+
+}
+.innerTopsaler button:hover{
+    border-radius: 0px !important;
+    background: #ffa502;
+}
+.contentTopsaler button{
+    width: 50%;
+    height: 2.5rem;
+    border: none;
+    color: #1827cea7;
+    transition: 0.5s;
+    box-shadow: 2.5px 2px 5px 0.1px #1827cea7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentTopsaler span{
+    text-align: center;
+}
+.contentTopsaler span:nth-child(1){
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.contentTopsaler span:nth-child(2){
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+.titleTopsaler{
+    text-align: center;
+    color: #000 ;
+    font-size: 3rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #1827cea7;
+}
+@media only screen and (max-width: 412px){
+    .TopSaler{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topsaler{
+        width: 100%;
+    }
+    .contentTopsaler span:nth-child(1){
+        font-size: 2rem;
+    }
+    .contentTopsaler span:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .contentTopsaler button{
+        height: 4rem;
+    }
+    .contentTopsaler button span{
+        font-size: 1.2rem;
+    }
+    .titleTopsaler{
+        color: #000 ;
+        font-size: 3rem;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #1827cea7;
+    }
+}

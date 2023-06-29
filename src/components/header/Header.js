@@ -15,8 +15,10 @@ import css from "../header/Header.css"
 import someTypes from "../../type.json"
 import authorjson from "../../author.json"
 import Pay from "../pay/Pay"
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AppContext } from "../../AppContext"
 export default function Header() {
+    const { types, fil, handleSearch, text, listSearch, nothing } = useContext(AppContext)
     const [check, setCheck] = useState(false)
     const [check1,setCheck1]=useState(false)
     const [num, setNum] = useState(0)
@@ -35,9 +37,9 @@ export default function Header() {
         }
     }
     const authors=authorjson.authors
-    const types = someTypes.types
     return (
         <div className="header">
+            <span className="toggle">|||</span>
             <div className="topHeader">
                 <div className="leftTopHeader">
                     <div className="bestSeller">
@@ -46,21 +48,17 @@ export default function Header() {
                     </div>
                     <div className="blog">
                         <span className="iconTopHeader"><BsReverseLayoutTextSidebarReverse /></span>
-                        <Link className="linkTopHeader" to="/infobooks"><span>Bài viết</span></Link>
+                        <Link className="linkTopHeader" to="/blog"><span>Bài viết</span></Link>
                     </div>
                     <div className="loveProduct">
                         <span className="iconTopHeader"><AiOutlineHeart /></span>
-                        <Link className="linkTopHeader"><span>Danh mục yêu thích</span></Link>
+                        <Link className="linkTopHeader" to="/love"><span>Danh mục yêu thích</span></Link>
                     </div>
                 </div>
                 <div className="rightTopHeader">
                     <div className="email">
                         <span className="iconTopHeader"><HiOutlineMail /></span>
                         <Link className="linkTopHeader" to="/email"><span>Email</span></Link>
-                    </div>
-                    <div className="account">
-                        <span className="iconTopHeader"><VscAccount /></span>
-                        <Link className="linkTopHeader"><span>Tài khoản</span></Link>
                     </div>
                 </div>
             </div>
@@ -74,12 +72,30 @@ export default function Header() {
                 <div className="centerMiddleHeader">
                     <div className="search">
                         <div className="filter">
-                            <span><FiFilter /></span>
-                            <h1>Bộ lọc</h1>
+                            <h1>Tìm Kiếm</h1>
+                            <ul className="listFilter">
+                                {
+                                    types.map((value,key) => {
+                                        return(
+                                            <li key={key} onClick={()=>fil(value.type)}><span>{value.type}</span></li>
+                                        )
+                                    })
+                                }
+                            </ul>
                         </div>
-                        <input type="text"></input>
-                        <span className="iconSearch"><RiSearchLine /></span>
+                        <input type="text" placeholder="Nhập tên sách..." onChange={handleSearch} value={text}></input>
+                        <Link className="iconSearch" to="/filter"><RiSearchLine /></Link>
                     </div>
+                        <ul className="listSearch">
+                            {
+                                listSearch.map((value,key) => {
+                                    return(
+                                        <li key={key}>{value.name}</li>
+                                    )
+                                })
+                            }
+                            <li><h1>{nothing}</h1></li>
+                        </ul>
                 </div>
                 <div className="elseMiddleHeader">
                     <Link className="cart" to="/pay">
@@ -133,8 +149,7 @@ export default function Header() {
                             }
                         </ul>
                     </div>
-                    <Link className="linkNavbar"><h1>Sản phẩm mới nhất</h1></Link>
-                    <Link className="linkNavbar"><h1>Liên hệ</h1></Link>
+                    <Link className="linkNavbar" to="/contact"><h1>Liên hệ</h1></Link>
                 </div>
             </div>
         </div>
