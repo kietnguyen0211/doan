@@ -3,10 +3,15 @@
     display: flex;
     flex-wrap: wrap;
     background: #f5f6fa;
+    width: 100%;
+}
+.bookshelfContentElse{
+    width: 100%;
 }
 .home{
     width: 100%;
     height: 100%;
+    transition: 0.5s;
 }
 .slideContent{
     width: calc(100% / 4);
@@ -213,6 +218,10 @@
 .bookshelfContainElse{
     width: 100%;
 }
+
+
+
+
 @media only screen and (max-width: 412px){
     .slider{
         height: fit-content;
@@ -268,6 +277,211 @@
     .slideContain span:nth-child(2){
         font-size: 2rem;
         font-weight: 800;
+    }
+    .slideContain button{
+        width: 50%;
+        height: 4rem;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 413px) and (max-width: 700px){
+    .slider{
+        height: fit-content;
+    }
+    .sliderContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sliderContent img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .sliderContent span{
+        font-size: 2rem;
+    }
+    .bookshelfContain{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bookshelfContain h1{
+        font-size: 2rem;
+    }
+    .sliderImg{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .leftSlider,.rightSlider{
+        width: 100%;
+    }
+    .economicbooks,.majorbooks,.literaturebooks,.childrenbooks{
+        width: 100%;
+        height: 300px;
+    }
+    .slide img{
+        width: 370px;
+        height: 370px;
+    }
+    .slider img{
+        width: 100%;
+    }
+    .slideContain span:nth-child(2){
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .slider span{
+        width: 100%;
+    }
+    .bookshelfContainElse{
+        width: 100%;
+    }
+    .slideContent{
+        width: 100%;
+        /* padding: 1rem; */
+    }
+    .slideContain button{
+        width: 50%;
+        height: 4rem;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 701px) and (max-width: 1000px){
+    .slider{
+        height: fit-content;
+    }
+    .slide{
+        width: 100%;
+    }
+    .slideContent {
+        width: calc(100% / 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sliderContent img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .sliderContent span{
+        font-size: 2rem;
+    }
+    .bookshelfContain{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bookshelfContain h1{
+        font-size: 2rem;
+    }
+    .sliderImg{
+        width: 100%;
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .leftSlider,.rightSlider{
+        width: 100%;
+    }
+    .economicbooks,.majorbooks,.literaturebooks,.childrenbooks{
+        width: 100%;
+        height: 300px;
+    }
+    .slide img{
+        width: 100%;
+    }
+    .slider img{
+        width: 100%;
+    }
+    .slideContain span:nth-child(2){
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .slider span{
+        width: 100%;
+    }
+    .bookshelfContainElse{
+        width: 100%;
+    }
+    .slideContain button{
+        width: 50%;
+        height: 4rem;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px){
+    .slider{
+        height: fit-content;
+    }
+    .slide{
+        width: 100%;
+    }
+    .slideContent {
+        width: calc(100% / 3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sliderContent img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .sliderContent span{
+        font-size: 2rem;
+    }
+    .bookshelfContain{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bookshelfContain h1{
+        font-size: 2rem;
+    }
+    .sliderImg{
+        width: 100%;
+        display: flex;
+    }
+    .leftSlider,.rightSlider{
+        width: 100%;
+    }
+    .economicbooks,.majorbooks,.literaturebooks,.childrenbooks{
+        width: 100%;
+        height: 300px;
+    }
+    .slide img{
+        width: 100%;
+    }
+    .slider img{
+        width: 100%;
+    }
+    .slideContain span:nth-child(2){
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .slider span{
+        width: 100%;
+    }
+    .bookshelfContainElse{
+        width: 100%;
     }
     .slideContain button{
         width: 50%;

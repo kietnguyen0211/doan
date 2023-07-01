@@ -92,7 +92,7 @@
 }
 .innerAuthor img{
     filter:grayscale(100%) ;
-    width: 300px;
+    width:90%;
     height: 320px;
     transition: 0.3s;
 }
@@ -147,9 +147,25 @@
     box-shadow: 0 0 0.5rem 0.01rem #000;
     color: #000;
 }
-@media only screen and (max-width: 412px){
+@media only screen and (max-width: 600px){
     .one_author{
         width: 100%;
+    }
+    .innerAuthor{
+        width: 100%;
+    }
+    .infoAuthor {
+        width: 100%;
+    }
+    .infoAuthor span h2{
+        font-size: 3rem;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1100px){
+    .one_author{
+        width: calc(100% / 2);
     }
     .innerAuthor{
         width: 100%;

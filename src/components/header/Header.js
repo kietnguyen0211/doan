@@ -18,28 +18,36 @@ import Pay from "../pay/Pay"
 import { useState, useContext } from "react";
 import { AppContext } from "../../AppContext"
 export default function Header() {
-    const { types, fil, handleSearch, text, listSearch, nothing } = useContext(AppContext)
+    const { types, fil, handleSearch, text, listSearch, nothing, changeSb } = useContext(AppContext)
     const [check, setCheck] = useState(false)
-    const [check1,setCheck1]=useState(false)
+    const [check1, setCheck1] = useState(false)
     const [num, setNum] = useState(0)
+    const [checkFil, setCheckFil] = useState(false)
+    const changeFil = (flag) => {
+        if (flag == true) {
+            setCheckFil(true)
+        } else {
+            setCheckFil(false)
+        }
+    }
     const change = (flag) => {
-        if(flag==true){
+        if (flag == true) {
             setCheck(true)
-        }else{
+        } else {
             setCheck(false)
         }
     }
     const change1 = (flag) => {
-        if(flag==true){
+        if (flag == true) {
             setCheck1(true)
-        }else{
+        } else {
             setCheck1(false)
         }
     }
-    const authors=authorjson.authors
+    const authors = authorjson.authors
     return (
         <div className="header">
-            <span className="toggle">|||</span>
+            <span className="toggle" onClick={()=>changeSb(true)}>|||</span>
             <div className="topHeader">
                 <div className="leftTopHeader">
                     <div className="bestSeller">
@@ -73,29 +81,20 @@ export default function Header() {
                     <div className="search">
                         <div className="filter">
                             <h1>Tìm Kiếm</h1>
-                            <ul className="listFilter">
-                                {
-                                    types.map((value,key) => {
-                                        return(
-                                            <li key={key} onClick={()=>fil(value.type)}><span>{value.type}</span></li>
-                                        )
-                                    })
-                                }
-                            </ul>
                         </div>
-                        <input type="text" placeholder="Nhập tên sách..." onChange={handleSearch} value={text}></input>
+                        <input type="text" placeholder="Nhập tên sách..." onChange={handleSearch} value={text} onClick={() => changeFil(true)}></input>
                         <Link className="iconSearch" to="/filter"><RiSearchLine /></Link>
                     </div>
-                        <ul className="listSearch">
-                            {
-                                listSearch.map((value,key) => {
-                                    return(
-                                        <li key={key}>{value.name}</li>
-                                    )
-                                })
-                            }
-                            <li><h1>{nothing}</h1></li>
-                        </ul>
+                    <ul className={checkFil ? "listSearch active" : "listSearch"}>
+                        {
+                            listSearch.map((value, key) => {
+                                return (
+                                    <li key={key}>{value.name}</li>
+                                )
+                            })
+                        }
+                        <li><h1>{nothing}</h1></li>
+                    </ul>
                 </div>
                 <div className="elseMiddleHeader">
                     <Link className="cart" to="/pay">
@@ -110,39 +109,39 @@ export default function Header() {
                     <Link className="linkNavbar" to="/products"><h1>Sản phẩm</h1></Link>
                     <div className="type">
                         <Link className="linkNavbar"><h1>Thể loại</h1></Link>
-                        <span className={`${check ? "active1" : "active2"}`} onClick={() =>{
-                            if(check==true){
+                        <span className={`${check ? "active1" : "active2"}`} onClick={() => {
+                            if (check == true) {
                                 change(false)
                                 setCheck(false)
-                            }else{
+                            } else {
                                 change(true)
                                 console.log("meo")
                             }
                         }}><MdKeyboardArrowDown /></span>
-                            <ul className={`${check ? "types active" : "types"}`}>
-                                {
-                                    types.map((value, key) => {
-                                        return (
-                                            <li key={key}><Link>{value.type}</Link></li>
-                                        )
-                                    })
-                                }
-                            </ul>
+                        <ul className={`${check ? "types active" : "types"}`}>
+                            {
+                                types.map((value, key) => {
+                                    return (
+                                        <li key={key}><Link>{value.type}</Link></li>
+                                    )
+                                })
+                            }
+                        </ul>
                     </div>
                     <div className="author">
                         <Link to="/author" className="linkNavbar"><h1>Tác giả</h1></Link>
-                        <span className={`${check1 ? "active1" : "active2"}`} onClick={()=>{
-                            if(check1==true){
+                        <span className={`${check1 ? "active1" : "active2"}`} onClick={() => {
+                            if (check1 == true) {
                                 change1(false)
                                 setCheck1(false)
-                            }else{
+                            } else {
                                 change1(true)
                             }
                         }}><MdKeyboardArrowDown /></span>
                         <ul className={`${check1 ? "active" : ""}`}>
                             {
-                                authors.map((value,key)=>{
-                                    return(
+                                authors.map((value, key) => {
+                                    return (
                                         <li key={key}><span>{value.name}</span></li>
                                     )
                                 })

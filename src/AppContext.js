@@ -11,7 +11,9 @@ export const AppProvider = ({ children }) => {
     const [listSearch, setListSearch] = useState([])
     const [filter, setFilter] = useState([])
     const [text, setText] = useState("")
+    const [checksb, setChecksb] = useState(false)
     let nothing
+    let number = 0
     const [buy, setBuy] = useState(() => {
         let newList;
         if (localStorage.getItem("list")) {
@@ -49,8 +51,26 @@ export const AppProvider = ({ children }) => {
         }
     }
 
+    const changeSb = (flag) => {
+        number++
+        console.log(number)
+        if (number == 2) {
+            setChecksb(false)
+            number = 0
+            console.log(number)
+        }else if(number == 1){
+            setChecksb(true)
+            
+        }else{
+            setChecksb(false)
+        }
+        // if (flag == true) {
+        //     setChecksb(true)
+        // } else {
+        //     setChecksb(false)
+        // }
+    }
 
-    
     const BuyNow = (id) => {
         let newList
         if (buy != "") {
@@ -76,7 +96,7 @@ export const AppProvider = ({ children }) => {
             setBuy(newList)
         }
     }
-
+    // const changeListFilter
     const Erase = (id) => {
         const kq = buy.filter((item) => item.id != id)
         setBuy(kq)
@@ -120,7 +140,7 @@ export const AppProvider = ({ children }) => {
         getData()
     }, [])
     return (
-        <AppContext.Provider value={{ types, BuyNow, buy, data, books, love, loveList, fil, filter, handleSearch, text, listSearch, nothing, changeQty, Erase }}>
+        <AppContext.Provider value={{ types, BuyNow, buy, data, books, love, loveList, fil, filter, handleSearch, text, listSearch, nothing, changeQty, Erase, checksb, changeSb }}>
             {children}
         </AppContext.Provider>
     )

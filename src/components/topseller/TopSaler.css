@@ -9,6 +9,7 @@
     display: flex;
     flex-wrap: wrap;
    background: #f5f6fa;
+   /* justify-content: center; */
 }
 .topsaler{
     width: calc(100% / 4);
@@ -24,7 +25,7 @@
     justify-content: center;
 }
 .imgTopsaler img{
-    width: 100%;
+    width: 60%;
 }
 .contentTopsaler{
     display: flex;
@@ -87,23 +88,87 @@
     margin-bottom: 2rem;
     border-bottom: 1px solid #1827cea7;
 }
-@media only screen and (max-width: 412px){
+@media only screen and (max-width: 700px){
     .TopSaler{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
     .topsaler{
-        width: 100%;
+        width: 80%;
     }
     .contentTopsaler span:nth-child(1){
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .contentTopsaler span:nth-child(2){
         font-size: 1.5rem;
     }
     .contentTopsaler button{
-        height: 4rem;
+        height: 3rem;
+    }
+    .contentTopsaler button span{
+        font-size: 1.2rem;
+    }
+    .titleTopsaler{
+        color: #000 ;
+        font-size: 3rem;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #1827cea7;
+    }
+}
+
+
+
+@media only screen and (min-width: 701px) and (max-width: 1000px){
+    .TopSaler{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .topsaler{
+        width: calc(100% / 2);
+    }
+    .contentTopsaler span:nth-child(1){
+        font-size: 1rem;
+    }
+    .contentTopsaler span:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .contentTopsaler button{
+        height: 3rem;
+    }
+    .contentTopsaler button span{
+        font-size: 1.2rem;
+    }
+    .titleTopsaler{
+        color: #000 ;
+        font-size: 3rem;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #1827cea7;
+    }
+}
+
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px){
+    .TopSaler{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .topsaler{
+        width: calc(100% / 3);
+    }
+    .contentTopsaler span:nth-child(1){
+        font-size: 1rem;
+    }
+    .contentTopsaler span:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .contentTopsaler button{
+        height: 3rem;
     }
     .contentTopsaler button span{
         font-size: 1.2rem;

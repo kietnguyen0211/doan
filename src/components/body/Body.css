@@ -1,0 +1,74 @@
+.searchSidebar{
+    display: flex;
+}
+.linkNavbarSidebar{
+    text-decoration:none;
+    color: hsl(0, 0%, 0%);
+}
+.sidebar{
+    display: none;
+    background: #f3901fcc;
+    transition: 0.5s;
+}
+.sidebar.active{
+    display: block;
+    animation: sidebardown 1s linear ;
+}
+@keyframes sidebardown {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+.linkNavbarSidebar h1{
+    font-size: 1.5rem;
+}
+.typeSidebar{
+    display: flex;
+}
+.typeSidebar ul{
+    display: flex;
+    flex-direction: column;
+}
+.typeSidebar ul li{
+    list-style: none;
+}
+.typeSidebar ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.authorSidebar{
+    display: flex;
+}
+.authorSidebar ul{
+    display: none;
+    flex-direction: column;
+}
+.authorSidebar ul.active{
+    display: flex;
+}
+.authorSidebar ul li{
+    list-style: none;
+}
+.authorSidebar ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.closeSearch{
+    font-size: 2rem;
+    margin-left: 1rem;
+    width: 50px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.closeSearch.activeSearch{
+    display: flex;
+}

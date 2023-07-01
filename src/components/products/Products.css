@@ -45,7 +45,7 @@
     width: 100%;
 }
 .oneProduct button{
-    width: 50%;
+    width: 20vh;
     height: 2rem;
     border: none;
     color: #fff;
@@ -90,6 +90,44 @@
     } 
     .oneProduct button{
         width: 60%;
+        height: 4rem;
+    }
+}
+
+
+@media only screen and (min-width: 413px) and (max-width: 700px){
+    .product{
+        width: 100%;
+    }
+    .oneProduct h1{
+        font-size: 2rem;
+    } 
+    .oneProduct button{
+        width: 30vh;
+        height: 4rem;
+    }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px){
+    .product{
+        width: calc(100% / 2);
+    }
+    .oneProduct h1{
+        font-size: 2rem;
+    } 
+    .oneProduct button{
+        width: 30vh;
+        height: 4rem;
+    }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1300px){
+    .product{
+        width: calc(100% / 3);
+    }
+    .oneProduct h1{
+        font-size: 2rem;
+    } 
+    .oneProduct button{
+        width: 30vh;
         height: 4rem;
     }
 }
