@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/doan/static/css/main.da555e3a.css",
+    "main.js": "/doan/static/js/main.2680247a.js",
+    "static/media/bg.png": "/doan/static/media/bg.c1310dc6fe2fc24294f5.png",
+    "static/media/bookshelf.jpg": "/doan/static/media/bookshelf.935be026e0e3371710f1.jpg",
+    "static/media/logo2.png": "/doan/static/media/logo2.a635bd5a6a308965f60f.png",
+    "index.html": "/doan/index.html",
+    "main.da555e3a.css.map": "/doan/static/css/main.da555e3a.css.map",
+    "main.2680247a.js.map": "/doan/static/js/main.2680247a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da555e3a.css",
+    "static/js/main.2680247a.js"
+  ]
+}
