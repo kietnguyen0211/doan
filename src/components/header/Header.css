@@ -82,7 +82,10 @@
     transform: translateY(-0.02rem);
     box-shadow: 0 0 0.5rem 0.01rem rgb(0, 0, 0, 0.5);
 }
-
+.liFirst{
+    display: flex;
+    justify-content: center;
+}
 .types li a {
     width: 100%;
     font-size: 1rem;

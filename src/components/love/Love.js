@@ -2,7 +2,7 @@ import { AppContext } from "../../AppContext"
 import { useContext } from "react"
 import css from "./Love.css"
 export default function Love() {
-    const { loveList } = useContext(AppContext)
+    const { loveList, BuyNow } = useContext(AppContext)
     console.log(loveList)
     return (
         <div className="lovePages">
@@ -14,7 +14,7 @@ export default function Love() {
                             <div className="innerLove">
                                 <div className="loveImg">
                                     <img src={value.img}></img>
-                                    <button><span>Mua Ngay</span></button>
+                                    <button onClick={()=>BuyNow(value.id)}><span>Mua Ngay</span></button>
                                 </div>
                                 <div className="loveContent">
                                     <h1>{value.name}</h1>

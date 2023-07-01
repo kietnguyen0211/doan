@@ -12,7 +12,6 @@ export const AppProvider = ({ children }) => {
     const [filter, setFilter] = useState([])
     const [text, setText] = useState("")
     const [checksb, setChecksb] = useState(false)
-    let nothing
     let number = 0
     const [buy, setBuy] = useState(() => {
         let newList;
@@ -33,10 +32,6 @@ export const AppProvider = ({ children }) => {
             book.name.toLowerCase().includes(text.toLowerCase())
         );
         setListSearch(filterSearch)
-        if (filterSearch == "") {
-            nothing = "Không tìm thấy, hãy nhập lại hoặc có thể shop chưa có sách mà bạn muốn tìm"
-            console.log(nothing)
-        }
     }
 
 
@@ -64,11 +59,6 @@ export const AppProvider = ({ children }) => {
         }else{
             setChecksb(false)
         }
-        // if (flag == true) {
-        //     setChecksb(true)
-        // } else {
-        //     setChecksb(false)
-        // }
     }
 
     const BuyNow = (id) => {
@@ -96,7 +86,6 @@ export const AppProvider = ({ children }) => {
             setBuy(newList)
         }
     }
-    // const changeListFilter
     const Erase = (id) => {
         const kq = buy.filter((item) => item.id != id)
         setBuy(kq)
@@ -140,7 +129,7 @@ export const AppProvider = ({ children }) => {
         getData()
     }, [])
     return (
-        <AppContext.Provider value={{ types, BuyNow, buy, data, books, love, loveList, fil, filter, handleSearch, text, listSearch, nothing, changeQty, Erase, checksb, changeSb }}>
+        <AppContext.Provider value={{ types, BuyNow, buy, data, books, love, loveList, fil, filter, handleSearch, text, listSearch,changeQty, Erase, checksb, changeSb }}>
             {children}
         </AppContext.Provider>
     )

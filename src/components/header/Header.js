@@ -86,6 +86,7 @@ export default function Header() {
                         <Link className="iconSearch" to="/filter"><RiSearchLine /></Link>
                     </div>
                     <ul className={checkFil ? "listSearch active" : "listSearch"}>
+                        <li className="liFirst" onClick={()=>changeFil(false)}>X</li>
                         {
                             listSearch.map((value, key) => {
                                 return (
@@ -93,7 +94,6 @@ export default function Header() {
                                 )
                             })
                         }
-                        <li><h1>{nothing}</h1></li>
                     </ul>
                 </div>
                 <div className="elseMiddleHeader">

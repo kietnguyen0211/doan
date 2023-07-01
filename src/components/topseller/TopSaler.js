@@ -2,7 +2,7 @@ import AppContext from "../../AppContext"
 import { useContext } from "react"
 import css from "./TopSaler.css"
 export default function TopSaler() {
-    const { books } = useContext(AppContext)
+    const { books, BuyNow } = useContext(AppContext)
     return (
         <div className="Topsaler">
             <h1 className="titleTopsaler">Sách Bán Chạy</h1>
@@ -18,7 +18,7 @@ export default function TopSaler() {
                                     <div className="contentTopsaler">
                                         <span>{value.name}</span>
                                         <span>{value.cost} đ</span>
-                                        <button><span>Mua Ngay</span></button>
+                                        <button onClick={()=>BuyNow(value.id)}><span>Mua Ngay</span></button>
                                     </div>
                                 </div>
                             </div>
