@@ -4,12 +4,13 @@ import { FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa"
 import { GrLink } from "react-icons/gr"
 import { TbBrandShopee } from "react-icons/tb"
 import { AiOutlineAlibaba } from "react-icons/ai"
+import logoImg from "./logo2.png"
 export default function Footer() {
     return (
         <div className="footer">
             <div className="topFooter">
                 <div className="logoFooter">
-                    <img src="logo2.png"></img>
+                    <img src={logoImg}></img>
                     <h1>MyBooks</h1>
                 </div>
                 <div className="contentFooter">

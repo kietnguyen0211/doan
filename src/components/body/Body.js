@@ -120,7 +120,7 @@ export default function Body() {
 
             <Routes>
                 <Route path="/infobooks" element={<InfoBooks />}></Route>
-                <Route path="/" element={<Home />}></Route>
+                <Route path="*" element={<Home />}></Route>
                 <Route path="/introduce" element={<Introduce />}></Route>
                 <Route path="/author" element={<Author />}></Route>
                 <Route path="/products" element={<Products />}></Route>

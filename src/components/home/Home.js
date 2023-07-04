@@ -8,6 +8,7 @@ import { AppContext } from "../../AppContext"
 import axios from "axios"
 import { Col } from "react-bootstrap"
 import { AiOutlineHeart } from "react-icons/ai"
+import imgLogo from "./logo2.png"
 export default function Home() {
     const { BuyNow, books, love } = useContext(AppContext)
     const [check1, setCheck1] = useState(false)
@@ -41,7 +42,7 @@ export default function Home() {
                 <Route path="/" element={<Greeting />}></Route>
             </Routes>
             <div className="sliderContent">
-                <img src="logo2.png"></img>
+                <img src={imgLogo}></img>
                 <span>Các thể loại được ưa thích</span>
             </div>
             <div className="slider">
@@ -49,21 +50,21 @@ export default function Home() {
                     <div className="leftSlider" >
                         <div className="economicbooks" onMouseOut={() => change(false, 1)} onMouseOver={() => change(true, 1)}>
                             <span className={`${check1 ? "active" : ""}`}>Sách kinh tế</span>
-                            <img src="sachkinhte.jpg"></img>
+                            <img src="https://readvii.com/wp-content/uploads/2020/03/sach-hay-ve-kinh-te-cover.png"></img>
                         </div>
                         <div className="majorbooks" onMouseOut={() => change(false, 2)} onMouseOver={() => change(true, 2)}>
                             <span className={`${check2 ? "active" : ""}`} >Sách chuyên môn</span>
-                            <img src="sachchuyenmon.jpg" ></img>
+                            <img src="https://toidayhoc.com/wp-content/uploads/2019/12/s%C3%A1ch-l%E1%BA%ADp-tr%C3%ACnh-php.jpg" ></img>
                         </div>
                     </div>
                     <div className="rightSlider" >
                         <div className="literaturebooks" onMouseOut={() => change(false, 3)} onMouseOver={() => change(true, 3)}>
                             <span className={`${check3 ? "active" : ""}`} >Sách văn học</span>
-                            <img src="sachvanhoc.jpg"></img>
+                            <img src="https://sachhay24h.com/uploads/news/243969194_l.jpg"></img>
                         </div>
                         <div className="childrenbooks" onMouseOut={() => change(false, 4)} onMouseOver={() => change(true, 4)}>
                             <span className={`${check4 ? "active" : ""}`}>Sách thiếu nhi</span>
-                            <img src="sachthieunhi.jpg"></img>
+                            <img src="https://10hay.com/wp-content/uploads/2016/07/sach-thieu-nhi.jpg"></img>
                         </div>
                     </div>
                 </div>
@@ -72,7 +73,7 @@ export default function Home() {
                 <div className="bookshelfContent">
                     <div className="bookshelfContentTop">
                         <div className="bookshelfContain">
-                            <img src="logo2.png"></img>
+                            <img src={imgLogo}></img>
                             <h1>Tủ sách MyBooks</h1>
                         </div>
                     </div>

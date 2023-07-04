@@ -65,24 +65,24 @@ export const AppProvider = ({ children }) => {
         let newList
         if (buy != "") {
             const kq = books.find((value) => value.id == id)
-            console.log(kq)
             const index = buy.findIndex((item) => item.id == id)
-            console.log("id: ", id)
             if (index >= 0) {
                 let newList = buy
+                console.log("newListofBuy: ",newList," and Buy: ",buy)
                 newList[index]["qty"]++
                 setBuy(newList)
-                console.log("local")
+                console.log("newlistIf: ",newList)
+                localStorage.setItem("list", JSON.stringify(newList))
             } else {
-                newList = [...buy, { name: data[id * 1].name, cost: data[id * 1].cost, qty: 1, id: id }]
-                console.log(newList)
+                newList = [...buy, { name: data[id].name, cost: data[id].cost, qty: 1, id: id }]
+                console.log("newListElse",newList)
                 setBuy(newList)
+                localStorage.setItem("list", JSON.stringify(newList))
             }
-            localStorage.setItem("list", JSON.stringify(newList))
         } else {
             newList = [...buy, { name: data[id * 1].name, cost: data[id * 1].cost, qty: 1, id: id }]
-            console.log(newList)
             localStorage.setItem("list", JSON.stringify(newList))
+            console.log("newListFirst: ",newList)
             setBuy(newList)
         }
     }
@@ -93,7 +93,6 @@ export const AppProvider = ({ children }) => {
     }
 
     const changeQty = (id, num) => {
-        console.log(buy)
         console.log("idNum: ", id)
         const kq = buy.map((item) =>
             (item.id == id && !(num == -1 && item["qty"] == 1))
@@ -128,6 +127,7 @@ export const AppProvider = ({ children }) => {
     useEffect(() => {
         getData()
     }, [])
+
     return (
         <AppContext.Provider value={{ types, BuyNow, buy, data, books, love, loveList, fil, filter, handleSearch, text, listSearch,changeQty, Erase, checksb, changeSb }}>
             {children}
