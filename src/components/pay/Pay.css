@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    background: linear-gradient(40deg,#fff,#00a8ff);
 }
 .Pay_title{
     padding: 1rem;

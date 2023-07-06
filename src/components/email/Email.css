@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(60deg,#3498db,#9b59b6);
+    background: linear-gradient(40deg,#fff,#00a8ff);
 }
 .Email h1{
     padding: 0.5rem;

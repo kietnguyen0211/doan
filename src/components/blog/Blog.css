@@ -4,6 +4,7 @@
     align-items: center;
     padding: 2rem;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(40deg,#fff,#00a8ff);
     flex-direction: column;
 }
 .tittleBlog{
@@ -17,7 +18,8 @@
 .innerBlog{
     width: 50%;
     padding: 2rem;
-    box-shadow: 0 0 0.1rem 0.05rem rgb(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.1rem 0.1rem rgb(0, 0, 0, 0.2);
+    background: #fff;
 }
 .innerBlog p{
     font-size: 1rem;

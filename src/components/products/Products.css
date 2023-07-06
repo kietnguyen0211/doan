@@ -2,7 +2,6 @@
     width: 100%;
    display: flex;
    flex-wrap: wrap;
-   background: #f5f6fa;
 }
 .product{
     width: calc(100% / 4);
@@ -68,6 +67,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    background: linear-gradient(40deg,#fff,#00a8ff);
 }
 .tittleProduct{
     text-align: center;

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background: linear-gradient(40deg,#fff,#00a8ff);
 }
 .content{
     display: flex;

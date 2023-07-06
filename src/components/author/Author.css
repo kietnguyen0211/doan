@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: #f5f6fa;
+    background: linear-gradient(40deg,#fff,#00a8ff);
     position: relative;
 }
 .one_author{

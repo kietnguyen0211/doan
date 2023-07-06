@@ -18,7 +18,7 @@ import Pay from "../pay/Pay"
 import { useState, useContext } from "react";
 import { AppContext } from "../../AppContext"
 export default function Header() {
-    const { types, fil, handleSearch, text, listSearch, nothing, changeSb } = useContext(AppContext)
+    const { types, fil, handleSearch, text, listSearch, nothing, changeSb} = useContext(AppContext)
     const [check, setCheck] = useState(false)
     const [check1, setCheck1] = useState(false)
     const [num, setNum] = useState(0)

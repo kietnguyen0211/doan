@@ -6,7 +6,6 @@ export const AppContext = createContext({})
 export const AppProvider = ({ children }) => {
     const books = infobooks.infobooks
     const types = listtype.types
-    const [data, setData] = useState([])
     const [loveList, setLoveList] = useState([])
     const [listSearch, setListSearch] = useState([])
     const [filter, setFilter] = useState([])
@@ -40,8 +39,8 @@ export const AppProvider = ({ children }) => {
         if (text === "Kinh tế") {
             newList = [books[0], books[1], books[2]]
             setFilter(newList)
-        } else if (text === "Kinh dị") {
-            newList = [books[8]]
+        } else if (text === "Văn học"){
+            newList = books[3]
             setFilter(newList)
         }
     }
@@ -74,13 +73,13 @@ export const AppProvider = ({ children }) => {
                 console.log("newlistIf: ",newList)
                 localStorage.setItem("list", JSON.stringify(newList))
             } else {
-                newList = [...buy, { name: data[id].name, cost: data[id].cost, qty: 1, id: id }]
+                newList = [...buy, { name: books[id].name, cost: books[id].cost, qty: 1, id: id }]
                 console.log("newListElse",newList)
                 setBuy(newList)
                 localStorage.setItem("list", JSON.stringify(newList))
             }
         } else {
-            newList = [...buy, { name: data[id * 1].name, cost: data[id * 1].cost, qty: 1, id: id }]
+            newList = [...buy, { name: books[id * 1].name, cost: books[id * 1].cost, qty: 1, id: id }]
             localStorage.setItem("list", JSON.stringify(newList))
             console.log("newListFirst: ",newList)
             setBuy(newList)
@@ -102,34 +101,16 @@ export const AppProvider = ({ children }) => {
         setBuy(kq)
         localStorage.setItem("list", JSON.stringify(kq))
     }
-
     const love = (id) => {
         let newList
         newList = books.map((value) => value.id == id ?
             setLoveList([...loveList, { ...value, isComplete: !value.isComplete }])
             : value)
+        localStorage.setItem("listLove", JSON.stringify(loveList))
     }
-
-
-
-    const getData = async () => {
-        const url = `https://64788a1a362560649a2dfbd8.mockapi.io/list`
-        axios
-            .get(url)
-            .then((res) => {
-                setData(res.data)
-                console.log(res.data)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-    }
-    useEffect(() => {
-        getData()
-    }, [])
 
     return (
-        <AppContext.Provider value={{ types, BuyNow, buy, data, books, love, loveList, fil, filter, handleSearch, text, listSearch,changeQty, Erase, checksb, changeSb }}>
+        <AppContext.Provider value={{ types, BuyNow, buy, books, love, loveList, fil, filter, handleSearch, text, listSearch,changeQty, Erase, checksb, changeSb}}>
             {children}
         </AppContext.Provider>
     )

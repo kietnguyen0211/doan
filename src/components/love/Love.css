@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(40deg,#fff,#00a8ff);
 }
 .tittleLove{
     border-bottom: 1px solid #1e3799cc;

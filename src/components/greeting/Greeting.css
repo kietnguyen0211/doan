@@ -160,7 +160,7 @@
 
 @media only screen and (max-width : 412px){
     .Greeting{
-        height: 60vh;
+        height: fit-content;
         display: flex;
         align-items: center;
     }
@@ -175,10 +175,16 @@
         font-size: 2rem;
     }
     .messageContent span{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .messageContent{
         width: 90%;
+        height: fit-content;
+    }
+    .leftMessageContent img {
+        width: 75%;
+        height: 50%;
+        padding: 1rem;
     }
 }
 

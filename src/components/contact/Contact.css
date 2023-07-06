@@ -1,6 +1,7 @@
 .Contact{
     width: 100%;
     padding: 2rem;
+    background: linear-gradient(40deg,#fff,#00a8ff);
 }
 .Contact .tittleContact{
     width: 100%;

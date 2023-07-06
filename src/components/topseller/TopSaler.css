@@ -3,13 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(40deg,#fff,#00a8ff);
 }
 .TopSaler{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-   background: #f5f6fa;
-   /* justify-content: center; */
 }
 .topsaler{
     width: calc(100% / 4);
@@ -86,6 +85,7 @@
     font-size: 3rem;
     padding: 0.5rem;
     margin-bottom: 2rem;
+    
     border-bottom: 1px solid #1827cea7;
 }
 @media only screen and (max-width: 700px){
